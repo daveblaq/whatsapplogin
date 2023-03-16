@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    // Define the 'otpless' function
+    window.otpless = (otplessUser) => {
+      // Retrieve the user's details after successful login
+      const waName = otplessUser.waName;
+      const waNumber = otplessUser.waNumber;
+
+      // Handle the signup/signin process
+      // ...
+    };
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Whatsapp OTP Login</h3>
+    
+      <div id="otpless"></div>
     </div>
   );
 }
