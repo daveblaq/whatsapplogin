@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App ">
       <div className="container mx-auto md:w-full w-11/12 flex items-center justify-center ">
-        <div className="bg-white shadow-lg flex items-center flex-col justify-center w-[40%] rounded-xl py-[50px] absolute top-[20%]">
+        <div className="bg-white shadow-lg flex items-center flex-col justify-center md:w-[40%] w-full rounded-xl py-[50px] absolute top-[20%] mx-8">
           <h3 className="pb-8">Whatsapp OTP Login</h3>
 
           <div id="otpless"></div>
